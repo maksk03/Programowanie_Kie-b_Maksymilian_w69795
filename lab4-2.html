@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obliczanie silni</title>
+</head>
+<body>
+    <script>
+        function silnia(n) {
+            if (n === 0) {
+                return 1;
+            } else {
+                return n * silnia(n - 1);
+            }
+        }
+        const liczba = 5; 
+        const wynik = silnia(liczba); 
+        document.write(`Silnia z ${liczba} wynosi ${wynik}`); 
+    </script>
+</body>
+</html>
