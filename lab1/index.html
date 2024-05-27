@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O mnie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .tab {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .tab th, .tab td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        header, nav, section, aside, footer {
+            padding: 20px;
+            margin: 10px;
+        }
+        nav a {
+            margin: 0 10px;
+        }
+        
+        .tabb {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100px;
+            height: 100px;
+        }
+
+        .tabb th, .tabb td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>O mnie</h1>
+        <img src="dog.jpg" alt="Mój obrazek" />
+    </header>
+    <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="https://www.netflix.com/browse">Ulubione seriale</a>
+        <a href="https://www.empik.com/ksiazki">Ulubione książki</a>
+    </nav>
+    <section>
+        <h2>Wykształcenie</h2>
+        <table class="tab">
+            <tr>
+                <th>Rok</th>
+                <th>Instytucja</th>
+            </tr>
+            <tr>
+                <td>2023 - Obecnie</td>
+                <td>Wsiz</td>
+            </tr>
+            <tr>
+                <td>2018 - 2023</td>
+                <td>Wyższa szkola robienia halasu</td>
+            </tr>
+            <tr>
+                <td>2015 - 2018</td>
+                <td>Liceum ogólnokształcące nr 1 w kosmosie</td>
+            </tr>
+        </table>
+    </section>
+    <aside>
+        <h2>Zainteresowania</h2>
+        <ul>
+            <li>Programowanie: <i>Python, JavaScript, C++</i></li>
+            <li>Sport: <i>bieganie, pływanie, jazda na rowerze</i></li>
+            <li>Muzyka: <i>gitara, pianino</i></li>
+        </ul>
+    </aside>
+    <hr>
+    <table class="tabb">
+        <thead>
+            <tr>
+                <th></th>
+                <th rowspan="2"></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td colspan="2" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+    <footer>
+        <p>Strona stworzona na potrzeby labolatorium z programowania</p>
+    </footer>
+</body>
+</html>
