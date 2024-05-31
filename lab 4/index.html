@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Rejestracyjny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Formularz Rejestracyjny</h2>
+        <form id="registrationForm">
+            <label for="firstName">Imię</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <div class="error-message"></div>
+
+            <label for="lastName">Nazwisko</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <div class="error-message"></div>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error-message"></div>
+
+            <label for="password">Hasło</label>
+            <input type="password" id="password" name="password" required minlength="8">
+            <div class="error-message"></div>
+
+            <label for="confirmPassword">Powtórz hasło</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <div class="error-message"></div>
+
+            <label for="gender">Płeć</label>
+            <select id="gender" name="gender" required>
+                <option value="">Wybierz...</option>
+                <option value="male">Mężczyzna</option>
+                <option value="female">Kobieta</option>
+                <option value="other">Inna</option>
+            </select>
+            <div class="error-message"></div>
+
+            <label for="phone">Telefon</label>
+            <input type="text" id="phone" name="phone" required>
+            <div class="error-message"></div>
+
+            <label for="dob">Data Urodzenia</label>
+            <input type="date" id="dob" name="dob" required>
+            <div class="error-message"></div>
+
+            <label for="country">Kraj</label>
+            <input type="text" id="country" name="country" required>
+            <div class="error-message"></div>
+
+            <label for="voivodeship" id="voivodeshipLabel" class="hidden">Województwo</label>
+            <select id="voivodeshipSelect" name="voivodeship" class="hidden">
+                <option value="dolnoslaskie">Dolnośląskie</option>
+                <option value="kujawsko-pomorskie">Kujawsko-pomorskie</option>
+                <option value="lubelskie">Lubelskie</option>
+                <option value="lubuskie">Lubuskie</option>
+                <option value="lodzkie">Łódzkie</option>
+                <option value="malopolskie">Małopolskie</option>
+                <option value="mazowieckie">Mazowieckie</option>
+                <option value="opolskie">Opolskie</option>
+                <option value="podkarpackie">Podkarpackie</option>
+                <option value="podlaskie">Podlaskie</option>
+                <option value="pomorskie">Pomorskie</option>
+                <option value="slaskie">Śląskie</option>
+                <option value="swietokrzyskie">Świętokrzyskie</option>
+                <option value="warminsko-mazurskie">Warmińsko-mazurskie</option>
+                <option value="wielkopolskie">Wielkopolskie</option>
+                <option value="zachodniopomorskie">Zachodniopomorskie</option>
+
+            </select>
+            <input type="text" id="voivodeshipText" name="voivodeship" class="hidden">
+            <div class="error-message"></div>
+
+            <label for="address">Adres zamieszkania</label>
+            <input type="text" id="address" name="address" required>
+            <div class="error-message"></div>
+
+            <label>
+                <input type="checkbox" id="sameAddress" name="sameAddress" checked>
+                Adres korespondencyjny jest taki sam jak adres zamieszkania
+            </label>
+
+            <div id="correspondenceAddressSection" class="hidden">
+                <label for="correspondenceAddress">Adres korespondencyjny</label>
+                <input type="text" id="correspondenceAddress" name="correspondenceAddress">
+                <div class="error-message"></div>
+            </div>
+
+            <button type="submit">Zapisz</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
